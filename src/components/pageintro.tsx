@@ -7,8 +7,8 @@ const PageIntro = ({ children, intro, text, nav, isTime = true }: { children?: R
                 <span>{intro}</span>
             </div>
             <div className="w-full flex justify-between items-center mt-2">
-                <div className="flex items-center gap-20">
-                    <h1 className="xs:text-4xl text-xl xs:tracking-normal tracking-tight font-medium">{text}</h1>
+                <div className="flex flex-col mx-auto sm:mx-0 sm:flex-row items-center gap-12 lg:gap-20">
+                    <h1 className="text-xl sm:text-2xl md:text-4xl xs:tracking-normal tracking-tight font-medium">{text}</h1>
                     <div className="flex items-center justify-center gap-x-4 lg:gap-x-6">
                         {!isTime && <ul className="flex gap-x-4 text-lg lg:gap-x-3 lg:mr-[620px] lg:text-3xl">
                             <li className="flex flex-col items-center font-bold">
